@@ -81,7 +81,7 @@ PROVIDERS: tuple[ProviderSpec, ...] = (
         is_direct=True,
     ),
 
-    # === Azure OpenAI (direct API calls with API version 2024-10-21) =====
+
     ProviderSpec(
         name="azure_openai",
         keywords=("azure", "azure-openai"),
@@ -453,6 +453,15 @@ PROVIDERS: tuple[ProviderSpec, ...] = (
         default_api_base="",
         strip_model_prefix=False,
         model_overrides=(),
+    ),
+    # === Codex CN (direct API with OPENAI_API_KEY) ============================
+    ProviderSpec(
+        name="codexcn",
+        keywords=("codexcn",),
+        env_key="OPENAI_API_KEY",
+        display_name="Codex CN",
+        litellm_prefix="",
+        is_direct=True,
     ),
 )
 

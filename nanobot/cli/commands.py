@@ -369,6 +369,8 @@ def _make_provider(config: Config):
 
     model = config.agents.defaults.model
     provider_name = config.get_provider_name(model)
+    if provider_name is None:
+        provider_name = config.agents.defaults.provider
     p = config.get_provider(model)
 
     # OpenAI Codex (OAuth)
@@ -394,6 +396,14 @@ def _make_provider(config: Config):
             api_key=p.api_key,
             api_base=p.api_base,
             default_model=model,
+        )
+    # Codex CN: direct Codex CN endpoint
+    elif provider_name == "codexcn":
+        from nanobot.providers.codexcn_provider import CodexCNProvider
+        provider = CodexCNProvider(
+            default_model=model,
+            api_key=p.api_key if p and p.api_key else None,
+            api_base=p.api_base if p and p.api_base else None,
         )
     else:
         from nanobot.providers.litellm_provider import LiteLLMProvider

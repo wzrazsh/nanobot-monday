@@ -1,0 +1,18 @@
+{
+  "task_id": "worldmonitor-data-collection",
+  "session": "opencode-worldmonitor-data-collection",
+  "workdir": "/opt/gitproject/worldmonitor",
+  "mode": "stop",
+  "status": "completed",
+  "cron_job_id": "",
+  "created_at": "2026-03-18T06:28:40.758629+00:00",
+  "updated_at": "2026-03-18T16:46:03.338294+00:00",
+  "last_output_hash": "",
+  "last_output_excerpt": "",
+  "last_decision": "stop",
+  "no_change_count": 0,
+  "allow_auto_continue": false,
+  "prompt_goal": "分析 worldmonitor 项目中“事实数据采集”是如何实现的。",
+  "completion_criteria": "完成代码级只读分析并输出中文报告即算完成",
+  "last_initial_prompt": "目标：分析 worldmonitor 项目中“事实数据采集”是如何实现的。\n上下文：仓库已在 /opt/gitproject/worldmonitor。请只读分析代码与文档，重点关注：数据源定义位置、抓取/拉取逻辑、服务端还是前端发起、缓存层、轮询/刷新机制、代理/中继、结构化数据接入方式、是否依赖第三方 API、错误回退机制。需要基于实际代码路径给出说明。\n约束：只读分析；不要安装依赖；不要启动服务；不要修改文件；不要泛泛而谈，尽量引用实际目录/文件/脚本/模块。\n输出：请输出一份中文简明报告：1）数据采集总体架构；2）主要采集路径；3）关键文件与模块；4）事实数据与AI分析数据的边界；5）采集风险与脆弱点。结尾明确写出：任务已完成。\n完成标准：完成代码级只读分析并输出中文报告即算完成\n若遇到错误：先分析原因，再尝试安全修复；若无法继续，请明确说明阻塞点。"
+}

@@ -1,0 +1,2 @@
+[2026-03-16T20:20:54.927497+00:00] start task session=opencode-resume-smoke-test session_action=created opencode_action=started
+[2026-03-16T20:20:55.017477+00:00] resume task session=opencode-resume-smoke-test cron_job_id=test-cron-001

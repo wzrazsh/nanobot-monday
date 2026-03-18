@@ -1,0 +1,19 @@
+{
+  "task_id": "smoke-test-20260318",
+  "session": "opencode-smoke-test-20260318",
+  "workdir": "/root/.nanobot/workspace",
+  "mode": "stop",
+  "status": "completed",
+  "cron_job_id": "",
+  "created_at": "2026-03-17T20:44:24.977804+00:00",
+  "updated_at": "2026-03-17T20:44:49.598494+00:00",
+  "last_output_hash": "8f85b6c95f1337b838bd0e40f58aa52b0eeb2d044d5195cd69bd02c44aee9d13",
+  "last_output_excerpt": "                                                                ▄\n                               █▀▀█ █▀▀█ █▀▀█ █▀▀▄ █▀▀▀ █▀▀█ █▀▀█ █▀▀█\n                               █  █ █  █ █▀▀▀ █  █ █    █  █ █  █ █▀▀▀\n                               ▀▀▀▀ █▀▀▀ ▀▀▀▀ ▀▀▀▀ ▀▀▀▀ ▀▀▀▀ ▀▀▀▀ ▀▀▀▀\n             ┃\n             ┃  Ask anything... \"Fix a TODO in the codebase\"\n             ┃\n             ┃  Build  MiniMax-M2.5 MiniMax Coding Plan (minimaxi.com)\n             ╹▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n                                                             tab agents  ctrl+p commands\n                     ● Tip Run opencode serve for headless API access to OpenCode\n  ~/.nanobot/workspace                                                                       1.2.27",
+  "last_decision": "stop",
+  "no_change_count": 0,
+  "allow_auto_continue": false,
+  "prompt_goal": "输出单词 READY 后停止，不要执行任何其他操作。",
+  "completion_criteria": "当且仅当输出 READY 时视为完成",
+  "last_initial_prompt": "目标：输出单词 READY 后停止，不要执行任何其他操作。\n上下文：这是一个 smoke test，用于验证 op-opencode 能否启动。\n约束：只输出 READY；不要修改文件；不要联网；不要持续运行。\n输出：终端输出 READY\n完成标准：当且仅当输出 READY 时视为完成\n若遇到错误：先分析原因，再尝试安全修复；若无法继续，请明确说明阻塞点。",
+  "last_probe_reason": "任务仍在执行或尚未达到完成条件。"
+}

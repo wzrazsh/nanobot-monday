@@ -1,0 +1,18 @@
+{
+  "task_id": "worldmonitor-risk-check",
+  "session": "opencode-worldmonitor-risk-check",
+  "workdir": "/opt/gitproject",
+  "mode": "stop",
+  "status": "completed",
+  "cron_job_id": "",
+  "created_at": "2026-03-17T20:56:22.940579+00:00",
+  "updated_at": "2026-03-17T21:01:35.156658+00:00",
+  "last_output_hash": "",
+  "last_output_excerpt": "",
+  "last_decision": "stop",
+  "no_change_count": 0,
+  "allow_auto_continue": false,
+  "prompt_goal": "下载 koala73/worldmonitor 项目，并分析使用该项目的主要风险，以及当前机器环境是否支持运行。",
+  "completion_criteria": "完成仓库拉取/确认并给出中文报告草稿即算完成",
+  "last_initial_prompt": "目标：下载 koala73/worldmonitor 项目，并分析使用该项目的主要风险，以及当前机器环境是否支持运行。\n上下文：目标目录是 /opt/gitproject。请先确认仓库地址，再在该目录下克隆项目（如已存在则复用并更新），阅读 README/文档/配置文件/package 清单/docker 文件，分析依赖、数据源、外部服务、浏览器/Node/Docker 需求、系统资源需求与合规风险。当前机器已知有 git/python3/node/npm/docker/tmux/opencode。\n约束：仅在 /opt/gitproject 下操作；优先只读分析，必要时才运行轻量检查；不要启动长期服务；不要执行高风险命令；不要修改系统级配置；如果需要安装新依赖，先说明而不要安装。\n输出：输出一份简明报告：1) 仓库位置与分支/提交；2) 项目用途摘要；3) 运行依赖与当前机器匹配度；4) 主要风险清单；5) 是否建议在本机运行；6) 如要运行，最小启动路径。将结论写成可直接发给用户的中文报告。\n完成标准：完成仓库拉取/确认并给出中文报告草稿即算完成\n若遇到错误：先分析原因，再尝试安全修复；若无法继续，请明确说明阻塞点。"
+}

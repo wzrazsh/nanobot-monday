@@ -1,0 +1,2 @@
+[2026-03-17T20:56:22.941004+00:00] start task session=opencode-worldmonitor-risk-check session_action=created opencode_action=started
+[2026-03-17T21:01:35.157084+00:00] stop task status=completed session_action=killed
